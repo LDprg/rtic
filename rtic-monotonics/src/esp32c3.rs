@@ -35,7 +35,7 @@ pub mod prelude {
     pub use fugit::{self, ExtU64, ExtU64Ceil};
 }
 use crate::TimerQueueBackend;
-use esp32c3::{INTERRUPT_CORE0, SYSTIMER};
+pub use esp32c3::{INTERRUPT_CORE0, SYSTIMER};
 use rtic_time::timer_queue::TimerQueue;
 
 /// Timer implementing [`TimerQueueBackend`].
